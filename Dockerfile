@@ -7,6 +7,8 @@ RUN apt-get update \
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=Europe/Moscow
 RUN apt-get install -y tzdata && \
+    php \
+    nodejs \
     apt-get install -y \
     curl \
     wget \
